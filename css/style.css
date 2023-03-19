@@ -45,19 +45,65 @@ h1 {
     color: white;
 }
 
-#biryani {
+#beef {
     background-color: rgb(242, 179, 255);
 }
 
-#beef {
+#fish {
     background-color: rgb(221, 167, 96);
 }
+#header-nav{
+    background-color: grey;
+    border-radius: 0;
+    border: 0;
+}
+.navbar-brand{
+    padding-top: 25px;
+}
+.navbar-brand p{
+    font-family: 'Lora', serif;
+    color: #fcf12c;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    text-align: center;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
 
+#nav-list{
+    margin-top: 10px;
+}
+#nav-list a{
+    color: blue;
+    text-align: center;
+}
+#nav-list a:hover{
+    background-color: #e7e7e7;
+}
+#nav-list a span{
+    font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #fff;
+  }
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+  }
 /* Destkop */
 @media (min-width: 992px) {
     .col-l-4 {
         width: 33.33%;
         float: left;
+    }
+    #collapsable-nav{
+        visibility: hidden;
     }
 }
 
@@ -71,11 +117,44 @@ h1 {
         width: 100%;
         float: left;
     }
+    #collapsable-nav{
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 767px) {
     .col-s-12 {
         width: 100%;
         float: left;
+    }
+    .navbar-brand{
+        height: 80px;
+    }
+    .navbar-brand p{
+        font-size: 5vw;
+        box-sizing: border-box;
+    }
+    #collapsable-nav a{
+        width: 280px;
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span{
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    #call-btn >a{
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+    }
+}
+@media(max-width: 479px){
+    .navbar-brand h1{
+        padding-top: 5px;
+        font-size: 6vw;
     }
 }

@@ -10,23 +10,48 @@
     <title>Coursera Module 3</title>
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-    /* Brand and toggle get grouped for better mobile display */
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
-        aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Brand</a>
-    </div>
+
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="conteiner">
+                <div class="navbar-brand text-center">
+                  <p>Food, LLC</p>                
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                 data-target="#collapsable-nav" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+              <ul id="nav-list" class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">
+                    <br class="hidden-xs">Chicken</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <br class="hidden-xs">fish</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <br class="hidden-xs">Beef</a>
+                </li>
+                
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
     <h1>Our Menu</h1>
     <section class="col-l-4 col-m-6 col-s-12">
         <div class="menu-item">
-            <div class="title" id="biryani">Beef</div>
+            <div class="title" id="beef">Beef</div>
             <div class="content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis unde odio temporibus nisi autem cumque tempore 
                 modi voluptas iusto similique quam dolore, dolorum consectetur ut fugit optio quo. Corporis?
@@ -36,7 +61,7 @@
     
     <section class="col-l-4 col-m-6 col-s-12">
         <div class="menu-item">
-            <div class="title" id="chicken">Fish</div>
+            <div class="title" id="fish">Fish</div>
             <div class="content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio quod incidunt iure. Veritatis nam accusamus expedita
                  explicabo natus aliquid incidunt doloremque, voluptates dicta dolores accusantium ipsam, magnam a aspernatur.
@@ -46,7 +71,7 @@
     
     <section class="col-l-4 col-m-12 col-s-12">
         <div class="menu-item">
-            <div class="title" id="beef">Chicken</div>
+            <div class="title" id="chicken">Chicken</div>
             <div class="content">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque veritatis necessitatibus error, aperiam amet, 
                 iure in vitae repellat nemo nesciunt laboriosam quisquam quam optio repellendus! Est nesciunt quis necessitatibus?
