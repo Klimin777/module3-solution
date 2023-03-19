@@ -75,7 +75,12 @@ h1 {
 .navbar-brand a:hover, .navbar-brand a:focus{
     text-decoration: none;
 }
-
+.navbar-brand p span {
+    vertical-align: middle;
+}
+.nav-bar{
+    margin: 7.5px -15px;
+}
 #nav-list{
     margin-top: 10px;
 }
@@ -89,13 +94,31 @@ h1 {
 #nav-list a span{
     font-size: 1.8em;
 }
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #fff;
-  }
-  .navbar-header button.navbar-toggle {
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
     clear: both;
     margin-top: -30px;
-  }
+}
+.btn-up{
+    position: relative;
+    margin-top: 15px;
+    
+}
+
+.btn-up a{
+    background-color: #fff;
+    color: #000;
+    font-size: 1.1em;
+    border: 1px solid #000;
+    padding: 5px;
+    
+}
+
+
 /* Destkop */
 @media (min-width: 992px) {
     .col-l-4 {
@@ -118,7 +141,7 @@ h1 {
         float: left;
     }
     #collapsable-nav{
-        visibility: hidden;
+         visibility: hidden;
     }
 }
 
@@ -127,29 +150,28 @@ h1 {
         width: 100%;
         float: left;
     }
-    .navbar-brand{
+    .navbar-brand {
+        padding-top: 10px;
         height: 80px;
+        padding-left: ;
     }
-    .navbar-brand p{
+        
+    .navbar-brand h1 {
         font-size: 5vw;
-        box-sizing: border-box;
     }
-    #collapsable-nav a{
-        width: 280px;
+    .navbar-brand p {
+        text-transform: uppercase;
+        font-size: 1.4em;
+    }
+    #collapsable-nav a {
         font-size: 1.2em;
     }
-    #collapsable-nav a span{
+    #collapsable-nav a span {
         font-size: 1em;
         margin-right: 5px;
     }
-    #call-btn >a{
-        font-size: 1.5em;
-        display: block;
-        margin: 0 20px;
-        padding: 10px;
-        border: 2px solid #fff;
-        background-color: #f6b319;
-        color: #951c49;
+    .collapsable-nav{
+        visibility: visible;
     }
 }
 @media(max-width: 479px){
